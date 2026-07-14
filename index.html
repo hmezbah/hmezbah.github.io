@@ -1,308 +1,1203 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Habibullah Mezbah — Full Stack Software Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
-        rel="stylesheet" />
-    <style>
-        :root {
-            --sand: #F7F5F0;
-            --ink: #1A1A18;
-            --muted: #6B6B66;
-            --accent: #2563EB;
-            --border: #E2DED6;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        * {
-            box-sizing: border-box;
-        }
+  <!-- SEO Meta Tags -->
+  <title>Habibullah Mezbah — Web Developer | Laravel, WordPress, PHP, React</title>
+  <meta name="description" content="Professional Web Developer specializing in Laravel, WordPress, PHP, MySQL, React, JavaScript, ERP Development, and Business Automation Solutions. Based in Dhaka, Bangladesh.">
+  <meta name="keywords" content="Habibullah Mezbah, Web Developer, Laravel Developer, WordPress Developer, PHP Developer, React Developer, ERP Development, Dhaka Bangladesh">
+  <meta name="author" content="Habibullah Mezbah">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hmezbah.com">
 
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background-color: var(--sand);
-            color: var(--ink);
-            margin: 0;
-        }
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Habibullah Mezbah — Web Developer">
+  <meta property="og:description" content="Professional Web Developer specializing in Laravel, WordPress, PHP, MySQL, React, and ERP Development.">
+  <meta property="og:url" content="https://hmezbah.com">
+  <meta property="og:image" content="assets/images/profile.png">
+  <meta property="og:locale" content="en_US">
 
-        .serif {
-            font-family: 'DM Serif Display', serif;
-        }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Habibullah Mezbah — Web Developer">
+  <meta name="twitter:description" content="Professional Web Developer specializing in Laravel, WordPress, PHP, MySQL, React, and ERP Development.">
 
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(24px);
-            }
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Habibullah Mezbah",
+    "jobTitle": "Web Developer",
+    "url": "https://hmezbah.com",
+    "email": "hmezbah@gmail.com",
+    "telephone": "+8801722734209",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "addressCountry": "BD"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/habibullah-mezbah",
+      "https://github.com/hmezbah"
+    ],
+    "knowsAbout": ["Laravel", "WordPress", "PHP", "MySQL", "React", "JavaScript", "ERP Development"]
+  }
+  </script>
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 
-        .fade-up {
-            opacity: 0;
-            animation: fadeUp 0.7s ease forwards;
-        }
-
-        .delay-1 {
-            animation-delay: 0.15s;
-        }
-
-        .delay-2 {
-            animation-delay: 0.3s;
-        }
-
-        .delay-3 {
-            animation-delay: 0.45s;
-        }
-
-        .delay-4 {
-            animation-delay: 0.6s;
-        }
-
-        .delay-5 {
-            animation-delay: 0.75s;
-        }
-
-        .skill-pill {
-            border: 1px solid var(--border);
-            background: #fff;
-            transition: border-color 0.2s, background 0.2s, transform 0.2s;
-        }
-
-        .skill-pill:hover {
-            border-color: var(--accent);
-            background: #EFF6FF;
-            transform: translateY(-2px);
-        }
-
-        .nav-link {
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--muted);
-            transition: color 0.2s;
-            text-decoration: none;
-        }
-
-        .nav-link:hover {
-            color: var(--ink);
-        }
-
-        .cta-btn {
-            background: var(--ink);
-            color: #fff;
-            transition: background 0.2s, transform 0.15s;
-        }
-
-        .cta-btn:hover {
-            background: #333;
-            transform: translateY(-1px);
-        }
-
-        .cta-outline {
-            border: 1.5px solid var(--ink);
-            color: var(--ink);
-            background: transparent;
-            transition: background 0.2s, color 0.2s, transform 0.15s;
-        }
-
-        .cta-outline:hover {
-            background: var(--ink);
-            color: #fff;
-            transform: translateY(-1px);
-        }
-
-        .divider {
-            border: none;
-            border-top: 1px solid var(--border);
-        }
-
-        .avatar-ring {
-            background: linear-gradient(135deg, #DBEAFE 0%, #EDE9FE 100%);
-        }
-    </style>
+  <!-- Theme Script (loaded early to prevent flash) -->
+  <script src="js/theme.js"></script>
 </head>
-
 <body>
 
-    <!-- NAV -->
-    <nav class="sticky top-0 z-50 bg-[#F7F5F0]/90 backdrop-blur-sm border-b border-[#E2DED6]">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <span class="serif text-lg tracking-tight">HM</span>
-            <div class="flex items-center gap-8">
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="mailto:hmezbah@gmail.com" class="cta-btn text-sm font-medium px-4 py-2 rounded-full">Hire
-                    Me</a>
-            </div>
-        </div>
-    </nav>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+      <span class="loading-text">Loading</span>
+    </div>
+  </div>
 
-    <!-- HERO -->
-    <header class="max-w-5xl mx-auto px-6 pt-24 pb-20">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
-            <div class="flex-1">
-                <p class="fade-up text-sm font-medium tracking-widest uppercase text-[#2563EB] mb-4">Available for Work
-                </p>
-                <h1 class="fade-up delay-1 serif text-6xl md:text-8xl leading-[1.0] tracking-tight text-[#1A1A18]">
-                    Habibullah<br /><em>Mezbah</em>
-                </h1>
-                <div class="fade-up delay-2 flex items-center gap-3 mt-6">
-                    <span class="w-8 h-[1.5px] bg-[#6B6B66]"></span>
-                    <p class="text-lg text-[#6B6B66] font-light tracking-wide">Full Stack Software Developer</p>
+  <!-- ═══════════════════════════════════════ -->
+  <!-- NAVIGATION -->
+  <!-- ═══════════════════════════════════════ -->
+  <header id="navbar" class="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-dot"></span>
+        HM
+      </a>
+
+      <nav id="nav-links" class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- HERO SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="hero" class="hero section">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            Available for Work
+          </div>
+
+          <h1 class="hero-name">
+            Habibullah<br>
+            <span class="gradient-text">Mezbah</span>
+          </h1>
+
+          <div class="hero-title">
+            <span id="typing-text">Web Developer</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            I design and develop modern, scalable, and user-friendly web applications, business solutions, ERP systems, and WordPress websites that help organizations streamline operations and grow digitally.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              View Portfolio
+            </a>
+            <a href="assets/resume/Habibullah-Mezbah-CV.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-ghost btn-lg">
+              Contact Me →
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number" data-count="5" data-suffix="+">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number" data-count="30" data-suffix="+">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number" data-count="20" data-suffix="+">0</div>
+              <div class="stat-label">Technologies Used</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number" data-count="25" data-suffix="+">0</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+            <div class="hero-image-glow"></div>
+            <div class="hero-image-ring"></div>
+            <img src="assets/images/profile.png" alt="Habibullah Mezbah — Web Developer" class="hero-image" width="380" height="380">
+            <div class="hero-floating-badge badge-top">
+              <span class="badge-icon">⚡</span>
+              Laravel Expert
+            </div>
+            <div class="hero-floating-badge badge-bottom">
+              <span class="badge-icon">🎯</span>
+              ERP Developer
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- ABOUT SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">👋 Introduction</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-description">Get to know me, my journey, and what drives me as a developer.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text animate-on-scroll slide-left">
+          <h3>Professional Web Developer</h3>
+          <p>
+            With expertise in Laravel, WordPress, PHP, MySQL, React, JavaScript, API Integration, ERP Development, and Business Automation Solutions, I bring ideas to life through clean, efficient code.
+          </p>
+          <p>
+            I enjoy transforming business requirements into efficient, scalable, and secure digital solutions. My focus is on clean code, performance, user experience, and long-term maintainability.
+          </p>
+          <p>
+            Whether it's building an enterprise ERP system, developing a WordPress website, or creating a custom web application — I approach every project with dedication and a deep commitment to delivering quality results that exceed expectations.
+          </p>
+
+          <div class="education-card">
+            <div class="edu-icon">🎓</div>
+            <h4>Bachelor of Science (B.Sc.)</h4>
+            <p>Computer Science & Engineering</p>
+            <p>Dhaka International University</p>
+          </div>
+        </div>
+
+        <div class="about-info animate-on-scroll slide-right">
+          <h3>Personal Information</h3>
+          
+          <div class="info-item">
+            <div class="info-icon">👤</div>
+            <div class="info-content">
+              <div class="info-label">Full Name</div>
+              <div class="info-value">Habibullah Mezbah</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+              <div class="info-label">Location</div>
+              <div class="info-value">Dhaka, Bangladesh</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-content">
+              <div class="info-label">Email</div>
+              <div class="info-value"><a href="mailto:hmezbah@gmail.com">hmezbah@gmail.com</a></div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📱</div>
+            <div class="info-content">
+              <div class="info-label">Mobile</div>
+              <div class="info-value"><a href="tel:+8801722734209">+8801722734209</a></div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">💼</div>
+            <div class="info-content">
+              <div class="info-label">LinkedIn</div>
+              <div class="info-value"><a href="https://www.linkedin.com/in/habibullah-mezbah" target="_blank" rel="noopener">linkedin.com/in/habibullah-mezbah</a></div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🐙</div>
+            <div class="info-content">
+              <div class="info-label">GitHub</div>
+              <div class="info-value"><a href="https://github.com/hmezbah" target="_blank" rel="noopener">github.com/hmezbah</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SKILLS SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">🛠️ Expertise</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-description">Technologies and tools I use to build modern, scalable web solutions.</p>
+      </div>
+
+      <div class="skills-grid" data-stagger>
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">⚙️</div>
+            <h3 class="skill-category-title">Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">REST API Development</span>
+            <span class="skill-tag">Authentication & Authorization</span>
+            <span class="skill-tag">Payment Gateway Integration</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🎨</div>
+            <h3 class="skill-category-title">Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Inertia.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">📝</div>
+            <h3 class="skill-category-title">CMS</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Elementor</span>
+            <span class="skill-tag">WooCommerce</span>
+            <span class="skill-tag">Custom Theme Development</span>
+            <span class="skill-tag">Plugin Customization</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🔧</div>
+            <h3 class="skill-category-title">Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Cloudflare</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- EXPERIENCE SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">💼 Career</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+        <p class="section-description">My professional journey and the companies I've contributed to.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Web Developer</div>
+                <div class="timeline-company">Bismillah Computer & Technology</div>
+              </div>
+              <span class="timeline-period">Current</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Web Application Development</li>
+              <li>ERP Development</li>
+              <li>Database Design</li>
+              <li>API Integration</li>
+              <li>System Maintenance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Former Web Developer</div>
+                <div class="timeline-company">Opus Technology Limited</div>
+              </div>
+              <span class="timeline-period">Previous</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Laravel Development</li>
+              <li>Software Maintenance</li>
+              <li>Business Application Development</li>
+              <li>Client Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PORTFOLIO SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">🚀 Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-description">A selection of real-world projects I've designed, developed, and delivered.</p>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="erp">ERP</button>
+        <button class="filter-btn" data-filter="laravel">Laravel</button>
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-btn" data-filter="corporate">Corporate Website</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1: Textile ERP -->
+        <div class="project-card animate-on-scroll" data-category="erp">
+          <div class="project-image">
+            <img src="assets/images/project-erp.png" alt="Wholesale Textile & Garments Trading ERP" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="#contact" class="btn btn-primary btn-sm">Request Demo</a>
+              <a href="https://github.com/hmezbah" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">ERP System</div>
+            <h3 class="project-name">Wholesale Textile & Garments Trading ERP</h3>
+            <p class="project-description">A comprehensive ERP solution for textile and garments wholesale trading businesses, managing complete business operations from inventory to accounting.</p>
+            <div class="project-tech">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Inventory Management</li>
+                <li>Sales & Purchase</li>
+                <li>Accounting</li>
+                <li>Debtors & Creditors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Police Mess Management -->
+        <div class="project-card animate-on-scroll" data-category="laravel">
+          <div class="project-image">
+            <img src="assets/images/project-mess.png" alt="Police Force Mess Management System" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="#contact" class="btn btn-primary btn-sm">Request Demo</a>
+              <a href="https://github.com/hmezbah" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Laravel Application</div>
+            <h3 class="project-name">Police Force Mess Management System</h3>
+            <p class="project-description">A complete mess management system for police forces, handling meal tracking, financial reporting, and member management with automated PDF/Excel generation.</p>
+            <div class="project-tech">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Meal Management</li>
+                <li>Financial Reports</li>
+                <li>Member Management</li>
+                <li>PDF & Excel Reporting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 4: BCT Website -->
+        <div class="project-card animate-on-scroll" data-category="laravel">
+          <div class="project-image">
+            <img src="assets/images/project-bct.png" alt="Bismillah Computer & Technology Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://bct.com.bd/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Laravel / Corporate Website</div>
+            <h3 class="project-name">Bismillah Computer & Technology</h3>
+            <p class="project-description">Official corporate portal and customer service application for Bismillah Computer & Technology, providing tech products catalog, service requests, and hardware options.</p>
+            <div class="project-tech">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>IT Products Catalog</li>
+                <li>Service Inquiries</li>
+                <li>Interactive Layout</li>
+                <li>Dynamic Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Opus Technology Limited -->
+        <div class="project-card animate-on-scroll" data-category="laravel">
+          <div class="project-image">
+            <img src="assets/images/project-opus.png" alt="Opus Technology Limited Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://opus-bd.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Laravel / Corporate Website</div>
+            <h3 class="project-name">Opus Technology Limited</h3>
+            <p class="project-description">Premium business website for Opus Technology Limited. Showcases enterprise software products, client testimonials, and business automation solutions.</p>
+            <div class="project-tech">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Software Showcase</li>
+                <li>Dynamic Inquiry Forms</li>
+                <li>Corporate Profiles</li>
+                <li>Client Portfolios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: PUNAK Website -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-punak.png" alt="Bangladesh Police Nari Kalyan Samity (PUNAK) Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://punak.police.gov.bd/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress</div>
+            <h3 class="project-name">Bangladesh Police Nari Kalyan Samity (PUNAK)</h3>
+            <p class="project-description">Official portal of Bangladesh Police Women's Welfare Association, built to present charitable initiatives, events gallery, and notice announcements.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>PHP</span>
+              <span>Custom Theme</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Bengali Language Localization</li>
+                <li>Notice Board updates</li>
+                <li>Event Photo Galleries</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Design Hub -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-designhub.png" alt="Design Hub Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://designhub-bd.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress</div>
+            <h3 class="project-name">Design Hub</h3>
+            <p class="project-description">Corporate showcase website for a creative graphic and web design agency, showing off digital art portfolio, branding lists, and packages.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>Elementor</span>
+              <span>Custom CSS</span>
+              <span>PHP</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Visual Portfolio Grids</li>
+                <li>Interactive Contact Form</li>
+                <li>Service Listings</li>
+                <li>Creative Layouts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: HouseofIT.uk -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-houseofit.png" alt="HouseofIT.uk Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://houseofit.uk/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress / Corporate Website</div>
+            <h3 class="project-name">HouseofIT.uk</h3>
+            <p class="project-description">Professional corporate IT consultancy website featuring service directories, support ticket options, and security services representations.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>Elementor Customization</span>
+              <span>SEO</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Services Catalog</li>
+                <li>Client Contact Portal</li>
+                <li>Security Audits Page</li>
+                <li>UK Sourcing Standard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: AST Fashion Limited -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-astfashion.png" alt="AST Fashion Limited Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://astfashionbd.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress Website</div>
+            <h3 class="project-name">AST Fashion Limited</h3>
+            <p class="project-description">Modern portal representing garment exports, textile manufacturing lines, custom design collections, and product showcase catalogs.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>WooCommerce</span>
+              <span>PHP</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Garments Catalog Grid</li>
+                <li>Buyer Inquiries</li>
+                <li>Production Details</li>
+                <li>Export Logistics Page</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10: Lenient Fashion Ltd. -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-lenientfashion.png" alt="Lenient Fashion Ltd Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://lenientfashion.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress Website</div>
+            <h3 class="project-name">Lenient Fashion Ltd.</h3>
+            <p class="project-description">Corporate portal showing high-quality textile production catalogs, eco-friendly standards, and machinery details for buyers.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>Custom Theme</span>
+              <span>PHP</span>
+              <span>HTML/CSS</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Sustainability Showcase</li>
+                <li>Factory Tours Media</li>
+                <li>Product Categories</li>
+                <li>Global Exporter Profile</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 11: Expect Apparel Ltd -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-expectapparel.png" alt="Expect Apparel Ltd Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://expectapparelbd.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress Website</div>
+            <h3 class="project-name">Expect Apparel Ltd.</h3>
+            <p class="project-description">Corporate web platform representing apparel manufacturing networks, shipping parameters, and fabric inventory catalogs.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>PHP</span>
+              <span>CSS3</span>
+              <span>Elementor</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Product Customization Catalog</li>
+                <li>Client Intake Forms</li>
+                <li>Export Sourcing Map</li>
+                <li>Corporate Profiles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 12: BlueArc Sourcing -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-bluearc.png" alt="BlueArc Sourcing Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://bluearcsourcing.net/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress Website</div>
+            <h3 class="project-name">BlueArc Sourcing</h3>
+            <p class="project-description">Premium apparel buying house portal representing fabric sourcing options, international supplier networks, and quality control frameworks.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>Elementor</span>
+              <span>PHP</span>
+              <span>Custom Styles</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Apparel Showcases</li>
+                <li>Sourcing Portals</li>
+                <li>Manufacturer Directories</li>
+                <li>RFQ Integration Forms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 13: Ignite Global Ltd -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-igniteglobal.png" alt="Ignite Global Ltd Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://ignitegloballtd.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress Website</div>
+            <h3 class="project-name">Ignite Global Ltd</h3>
+            <p class="project-description">Global sourcing and manufacturing partner portal showcasing product development, trade supply chains, and export consulting details.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>SEO</span>
+              <span>PHP</span>
+              <span>Custom Design</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Consultation Intake Forms</li>
+                <li>Trade Sourcing Catalog</li>
+                <li>Global Markets Page</li>
+                <li>Enterprise Corporate Look</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 14: AAAEEE Website -->
+        <div class="project-card animate-on-scroll" data-category="wordpress">
+          <div class="project-image">
+            <img src="assets/images/project-aaaeee.png" alt="Aust Alumni Association of EEE Website" loading="lazy" width="600" height="375">
+            <div class="project-overlay">
+              <a href="https://aaaeee.org/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Live</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">WordPress Website</div>
+            <h3 class="project-name">Aust Alumni Association of EEE (AAAEEE)</h3>
+            <p class="project-description">Official alumni portal for the AUST Electrical & Electronic Engineering department, facilitating membership subscriptions, updates, and reunion listings.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>PHP</span>
+              <span>Custom Theme</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Alumni Member Directory</li>
+                <li>Subscription Registrations</li>
+                <li>Association Newsfeed</li>
+                <li>Reunion Event Planners</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SERVICES SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">✨ Services</span>
+        <h2 class="section-title">What I <span class="gradient-text">Offer</span></h2>
+        <p class="section-description">End-to-end web development services tailored to your business needs.</p>
+      </div>
+
+      <div class="services-grid" data-stagger>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>🌐</span></div>
+          <h3 class="service-title">Web Application Development</h3>
+          <p class="service-description">Custom web applications built with modern frameworks, designed for scalability, security, and exceptional user experience.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>🔷</span></div>
+          <h3 class="service-title">Laravel Development</h3>
+          <p class="service-description">Expert Laravel development including REST APIs, authentication systems, payment integrations, and complex business logic implementation.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>📰</span></div>
+          <h3 class="service-title">WordPress Development</h3>
+          <p class="service-description">Professional WordPress websites with custom themes, Elementor customization, WooCommerce setup, and plugin development.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>📊</span></div>
+          <h3 class="service-title">ERP Development</h3>
+          <p class="service-description">Enterprise Resource Planning solutions for inventory, accounting, HR, and complete business process automation.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>🛒</span></div>
+          <h3 class="service-title">E-commerce Development</h3>
+          <p class="service-description">Full-featured online stores with payment gateways, inventory management, order processing, and customer analytics.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>🔗</span></div>
+          <h3 class="service-title">API Integration</h3>
+          <p class="service-description">Seamless third-party API integrations including payment gateways, SMS services, email providers, and external data sources.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>🛡️</span></div>
+          <h3 class="service-title">Website Maintenance</h3>
+          <p class="service-description">Ongoing website maintenance including security updates, performance monitoring, bug fixes, and feature enhancements.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>⚡</span></div>
+          <h3 class="service-title">Performance Optimization</h3>
+          <p class="service-description">Speed optimization through caching, database tuning, code optimization, CDN setup, and Core Web Vitals improvement.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><span>🔍</span></div>
+          <h3 class="service-title">SEO-Friendly Development</h3>
+          <p class="service-description">Search engine optimized development with semantic HTML, schema markup, fast load times, and mobile-first design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TESTIMONIALS SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">💬 Feedback</span>
+        <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+        <p class="section-description">What my clients say about working with me.</p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div id="testimonials-track" class="testimonials-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">"</div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                Habibullah developed our complete ERP system from scratch. His understanding of business processes, combined with his technical skills in Laravel and MySQL, delivered a solution that transformed how we manage our garments trading operations. Highly recommended!
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials.png" alt="Mohammad Rahman" class="testimonial-avatar" width="56" height="56" style="object-position: left center;">
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Mohammad Rahman</div>
+                  <div class="testimonial-role">CEO, Textile Trading Co.</div>
                 </div>
-                <p class="fade-up delay-3 text-[#6B6B66] max-w-md mt-5 leading-relaxed text-base">
-                    I build scalable, user-focused web applications from database to deployment — turning complex ideas
-                    into clean, maintainable code.
-                </p>
-                <div class="fade-up delay-4 flex flex-wrap items-center gap-4 mt-8">
-    <a href="assets/Habibullah-Mezbah-CV.pdf" download
-        class="cta-btn text-sm font-medium px-6 py-3 rounded-full inline-flex items-center gap-2">
-        Download CV
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 16V4m0 12l-4-4m4 4l4-4M4 20h16" />
-        </svg>
-    </a>
-
-    <a href="#contact"
-        class="cta-outline text-sm font-medium px-6 py-3 rounded-full inline-flex items-center gap-2">
-        Contact Me
-    </a>
-</div>
+              </div>
             </div>
+          </div>
 
-            <!-- Avatar -->
-            <div class="fade-up delay-2 flex-shrink-0">
-                <div class="avatar-ring w-64 h-64 rounded-full flex items-center justify-center">
-                    <div
-                        class="w-56 h-56 rounded-full bg-[#F7F5F0] border border-[#E2DED6] overflow-hidden flex items-center justify-center">
-                        <img src="assets/mezbah.png" alt="Habibullah Mezbah"
-                            class="w-full h-full object-cover rounded-full">
-                    </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">"</div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                Working with Habibullah on our Mess Management System was a great experience. He delivered a well-structured, feature-rich application that perfectly handles our meal tracking and financial reporting needs. The PDF/Excel export functionality is fantastic.
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials.png" alt="Fatima Akter" class="testimonial-avatar" width="56" height="56" style="object-position: center center;">
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Fatima Akter</div>
+                  <div class="testimonial-role">Project Manager, GovTech Solutions</div>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">"</div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                Habibullah built our company website with WordPress and Elementor, and the results exceeded our expectations. The design is professional, loads fast, and ranks well on Google. His attention to SEO details and user experience is impressive.
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials.png" alt="Kamal Hossain" class="testimonial-avatar" width="56" height="56" style="object-position: right center;">
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Kamal Hossain</div>
+                  <div class="testimonial-role">Director, HouseofIT</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Stats row -->
-        <div class="fade-up delay-4 grid grid-cols-3 gap-6 mt-16 pt-10 border-t border-[#E2DED6]">
+        <div class="testimonials-nav">
+          <button id="testimonial-prev" aria-label="Previous testimonial">←</button>
+          <button id="testimonial-next" aria-label="Next testimonial">→</button>
+        </div>
+
+        <div class="testimonials-dots">
+          <div class="dot active" data-index="0"></div>
+          <div class="dot" data-index="1"></div>
+          <div class="dot" data-index="2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- BLOG SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">📚 Insights</span>
+        <h2 class="section-title">Latest <span class="gradient-text">Articles</span></h2>
+        <p class="section-description">Thoughts, tutorials, and insights on modern web development.</p>
+      </div>
+
+      <div class="blog-grid" data-stagger>
+        <!-- Blog 1 -->
+        <article class="blog-card animate-on-scroll">
+          <div class="blog-image">
+            <img src="assets/images/blog-covers.png" alt="Building Scalable ERP Systems with Laravel" loading="lazy" width="400" height="225" style="object-position: left top;">
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">Laravel</span>
+            <h3 class="blog-title">Building Scalable ERP Systems with Laravel</h3>
+            <p class="blog-excerpt">Learn the architectural patterns and best practices for building enterprise-grade ERP systems using Laravel framework.</p>
+            <div class="blog-meta">
+              <span>Jul 10, 2026</span>
+              <span class="blog-read-more">Read More →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="blog-card animate-on-scroll">
+          <div class="blog-image">
+            <img src="assets/images/blog-covers.png" alt="WordPress Performance Optimization Guide" loading="lazy" width="400" height="225" style="object-position: right top;">
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">WordPress</span>
+            <h3 class="blog-title">WordPress Performance Optimization Guide</h3>
+            <p class="blog-excerpt">Essential tips and techniques to make your WordPress website load faster and rank higher in search engines.</p>
+            <div class="blog-meta">
+              <span>Jun 28, 2026</span>
+              <span class="blog-read-more">Read More →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 3 -->
+        <article class="blog-card animate-on-scroll">
+          <div class="blog-image">
+            <img src="assets/images/blog-covers.png" alt="Securing Web Applications: Best Practices" loading="lazy" width="400" height="225" style="object-position: left bottom;">
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">Web Security</span>
+            <h3 class="blog-title">Securing Web Applications: Best Practices</h3>
+            <p class="blog-excerpt">A comprehensive guide to protecting your web applications from common vulnerabilities and security threats.</p>
+            <div class="blog-meta">
+              <span>Jun 15, 2026</span>
+              <span class="blog-read-more">Read More →</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CONTACT SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">📬 Get in Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-description">Have a project in mind? Let's discuss how I can help bring your vision to life.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-wrapper animate-on-scroll slide-left">
+          <h3>Send a Message</h3>
+          <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+
+          <form id="contact-form" action="https://formsubmit.co/ajax/hmezbah@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Full Name *</label>
+                <input type="text" id="form-name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Address *</label>
+                <input type="email" id="form-email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-phone">Phone Number</label>
+                <input type="tel" id="form-phone" name="phone" placeholder="+880 XXXX XXXXXX">
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" name="subject" placeholder="Project discussion">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message *</label>
+              <textarea id="form-message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div id="form-success" class="form-success">
+              ✅ Thank you! Your message has been sent successfully. I'll respond within 24 hours.
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-info animate-on-scroll slide-right">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out through any of the following channels.</p>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">✉️</div>
             <div>
-                <p class="serif text-4xl text-[#1A1A18]">2+</p>
-                <p class="text-sm text-[#6B6B66] mt-1">Years of Experience</p>
+              <div class="contact-card-label">Email</div>
+              <div class="contact-card-value"><a href="mailto:hmezbah@gmail.com">hmezbah@gmail.com</a></div>
             </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📱</div>
             <div>
-                <p class="serif text-4xl text-[#1A1A18]">20+</p>
-                <p class="text-sm text-[#6B6B66] mt-1">Projects Delivered</p>
+              <div class="contact-card-label">Phone</div>
+              <div class="contact-card-value"><a href="tel:+8801722734209">+8801722734209</a></div>
             </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">💼</div>
             <div>
-                <p class="serif text-4xl text-[#1A1A18]">15+</p>
-                <p class="text-sm text-[#6B6B66] mt-1">Happy Clients</p>
+              <div class="contact-card-label">LinkedIn</div>
+              <div class="contact-card-value"><a href="https://www.linkedin.com/in/habibullah-mezbah" target="_blank" rel="noopener">habibullah-mezbah</a></div>
             </div>
-        </div>
-    </header>
+          </div>
 
-    <hr class="divider max-w-5xl mx-auto" />
-
-    <!-- SKILLS -->
-    <section id="skills" class="max-w-5xl mx-auto px-6 py-20">
-        <div class="mb-12">
-            <p class="text-xs font-semibold tracking-widest uppercase text-[#6B6B66] mb-3">What I Work With</p>
-            <h2 class="serif text-4xl md:text-5xl text-[#1A1A18]">Skills &amp; <em>Technologies</em></h2>
-        </div>
-
-        <!-- Frontend -->
-        <div class="mb-10">
-            <p class="text-xs font-semibold uppercase tracking-widest text-[#2563EB] mb-4">Frontend</p>
-            <div class="flex flex-wrap gap-3">
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">React.js</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">Next.js</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">TypeScript</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">Tailwind CSS</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">Vue.js</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">HTML / CSS</span>
-            </div>
-        </div>
-
-        <!-- Backend -->
-        <div class="mb-10">
-            <p class="text-xs font-semibold uppercase tracking-widest text-[#2563EB] mb-4">Backend</p>
-            <div class="flex flex-wrap gap-3">
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">PHP</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">JavaScript</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">Laravel</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">Wordpress</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">REST APIs</span>
-            </div>
-        </div>
-
-        <!-- Database & DevOps -->
-        <div>
-            <p class="text-xs font-semibold uppercase tracking-widest text-[#2563EB] mb-4">Database &amp; DevOps</p>
-            <div class="flex flex-wrap gap-3">
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">MySQL</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">PostgreSQL</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">MongoDB</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">Redis</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">Docker</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">AWS</span>
-                <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium">CI / CD</span>
-            </div>
-        </div>
-    </section>
-
-    <hr class="divider max-w-5xl mx-auto" />
-
-    <!-- CONTACT CTA -->
-    <section id="contact" class="max-w-5xl mx-auto px-6 py-24">
-        <div
-            class="bg-[#1A1A18] rounded-3xl px-10 py-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+          <div class="contact-card">
+            <div class="contact-card-icon">🐙</div>
             <div>
-                <p class="text-[#6B6B66] text-sm font-medium tracking-widest uppercase mb-3">Let's Build Together</p>
-                <h2 class="serif text-4xl md:text-5xl text-white leading-tight">Got a project <br /><em
-                        class="text-[#93C5FD]">in mind?</em></h2>
-                <p class="text-[#9B9B94] mt-4 max-w-sm text-base leading-relaxed">
-                    I'm always open to discussing new opportunities, freelance work, or just a good conversation about
-                    tech.
-                </p>
+              <div class="contact-card-label">GitHub</div>
+              <div class="contact-card-value"><a href="https://github.com/hmezbah" target="_blank" rel="noopener">hmezbah</a></div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-                <a href="mailto:hmezbah@gmail.com"
-                    class="bg-white text-[#1A1A18] font-medium text-sm px-7 py-3.5 rounded-full text-center hover:bg-[#EFF6FF] transition-colors">
-                    Send an Email
-                </a>
-                <a href="https://linkedin.com/in/habibullah-mezbah"
-                    class="border border-white/20 text-white font-medium text-sm px-7 py-3.5 rounded-full text-center hover:bg-white/10 transition-colors">
-                    LinkedIn →
-                </a>
-            </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- FOOTER -->
-    <footer class="border-t border-[#E2DED6] bg-[#F7F5F0]">
-        <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <span class="serif text-lg tracking-tight text-[#1A1A18]">HM</span>
-            <p class="text-sm text-[#6B6B66]">© 2026 Habibullah Mezbah. All rights reserved.</p>
-            <div class="flex items-center gap-6">
-                <a href="https://github.com/hmezbah"
-                    class="text-sm text-[#6B6B66] hover:text-[#1A1A18] transition-colors">GitHub</a>
-                <a href="https://linkedin.com/in/habibullah-mezbah"
-                    class="text-sm text-[#6B6B66] hover:text-[#1A1A18] transition-colors">LinkedIn</a>
-                <a href="mailto:hmezbah@gmail.com"
-                    class="text-sm text-[#6B6B66] hover:text-[#1A1A18] transition-colors">Email</a>
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <div class="contact-card-label">Location</div>
+              <div class="contact-card-value">Dhaka, Bangladesh</div>
             </div>
-        </div>
-    </footer>
+          </div>
 
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/habibullah-mezbah" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/hmezbah" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://wa.me/8801722734209" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.45L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.556 0 10.064-4.513 10.068-10.076.002-2.695-1.047-5.227-2.951-7.133C16.566 1.49 14.054.44 11.393.44c-5.56 0-10.07 4.512-10.074 10.074-.001 1.93.53 3.8 1.537 5.402L1.87 20.278l4.777-1.124zm12.556-7.763c-.326-.162-1.926-.951-2.226-1.06-.3-.109-.52-.163-.74.162-.22.327-.85.733-1.04.95-.19.218-.38.245-.7.082-.32-.164-1.35-.497-2.57-1.59-.95-.845-1.59-1.89-1.78-2.217-.19-.325-.02-.5-.183-.663-.147-.146-.327-.38-.49-.57-.163-.19-.218-.327-.327-.545-.11-.218-.05-.408-.03-.57.02-.163.22-.544.33-.815.11-.272.163-.462.08-.625-.08-.163-.74-1.79-.1-2.5a1.86 1.86 0 0 0-.49-1.22c-.22-.22-.44-.326-.65-.326-.11 0-.22 0-.33.05-.27.11-.6.38-.82.6a3.61 3.61 0 0 0-1.14 2.66c0 1.63.76 3.2 1.09 3.64.33.43 2.5 3.82 6.1 5.38 2.19.95 3.02 1.15 4.12.98.54-.08 1.926-.788 2.196-1.55.27-.763.27-1.414.19-1.55-.08-.136-.3-.218-.626-.38z"/></svg>
+            </a>
+            <a href="mailto:hmezbah@gmail.com" class="social-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-dot"></span>
+            HM
+          </a>
+          <p>Professional Web Developer specializing in Laravel, WordPress, PHP, and ERP solutions. Building digital solutions that drive business growth.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="#services">Web Development</a>
+            <a href="#services">Laravel Development</a>
+            <a href="#services">WordPress</a>
+            <a href="#services">ERP Solutions</a>
+            <a href="#services">API Integration</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/habibullah-mezbah" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/hmezbah" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://wa.me/8801722734209" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:hmezbah@gmail.com">Email</a>
+            <a href="tel:+8801722734209">Phone</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Habibullah Mezbah. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
